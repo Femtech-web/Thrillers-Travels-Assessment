@@ -25,7 +25,7 @@ const Form = () => {
             <p className={styles.logo}>Tickets
             <span className='logo-border'>4U</span></p>
         </div>
-        <div className='flex'>
+        <div className='flex justify-evenly'>
             {navigations.map((navigation, index) => (
                 <NavigationTab key={index} {...navigation} 
                  handleClick={() => handleClick(navigation.transportType)} 
@@ -77,11 +77,11 @@ const Form = () => {
                         label='Class'
                         type='text'
                         value="Economy" 
-                        contStyles='w-[65%] mr-4'
+                        contStyles='w-[62%] mr-3'
                         icon={<MdFlightClass />}
                     />
                     <Input 
-                        label='Class'
+                        label='Passengers'
                         type='text'
                         value="2" 
                         contStyles='w-[35%]'

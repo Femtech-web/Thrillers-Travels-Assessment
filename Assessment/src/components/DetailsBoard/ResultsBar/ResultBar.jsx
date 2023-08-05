@@ -33,7 +33,7 @@ const ResultBar = ({logo, departTime, arriveTime, stops,totalTime, price}) => {
 
             <div className={styles.priceCont}>
                 <h2 className={styles.header}>price</h2>
-                <p className='font-semibold text-xl'>$ {price}</p>
+                <p className={styles.price}>$ {price}</p>
             </div>
         </div>
     </div>

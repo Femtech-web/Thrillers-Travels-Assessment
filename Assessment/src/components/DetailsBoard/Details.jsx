@@ -41,7 +41,7 @@ const Details = () => {
       <div className={styles.headerCont}>
         <div>
           <h1 className={styles.search}>Search results</h1>
-          <p className={styles.searchP}>We found 15 results</p>
+          <p className={styles.searchP}>We found 5 results</p>
         </div>
 
         <div className={styles.btnCont}>
@@ -55,7 +55,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className='mt-6'>
+      <div className='w-fit mt-6'>
         <p className={styles.route}>LONDON 
         <BsArrowRight className={styles.arrow} /> NEW YORK</p> 
       </div>
