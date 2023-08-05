@@ -8,7 +8,7 @@ const style = {
     detailsCont: 'flex md:flex-row flex-col justify-evenly w-[80%] mt-4 md:mt-0',
     details: 'flex justify-between md:w-1/2 w-full',
     header: 'text-[0.7rem] mb-2',
-    stopsCont: 'flex flex-col justify-center items-center',
+    stopsCont: `${genStyles.flexCenter} flex-col md:mx-0 mx-3`,
     stopBtn: (stops) => `${stops >= 1 ? 'bg-red-400' : 'bg-stopBtn'} ${genStyles.flexCenter} rounded-full mb-2 py-0.5 px-4 text-white`,
     priceCont: 'flex flex-col items-center md:mt-0 mt-4'
 }

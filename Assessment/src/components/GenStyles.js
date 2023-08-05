@@ -7,7 +7,7 @@ const styles = {
     flexBtw2: 'justify-between flex items-end',
     pagePad2: 'px-[3%] py-[2%]',
     pagePad: 'px-[7%] py-[5%]',
-    pageCont: 'flex md:flex-row flex-col text-color'
+    pageCont: 'flex md:flex-row flex-col text-color overflow-hidden'
 }
 
 export default styles;

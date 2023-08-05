@@ -55,7 +55,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className='mt-6 w-fit'>
+      <div className='mt-6'>
         <p className={styles.route}>LONDON 
         <BsArrowRight className={styles.arrow} /> NEW YORK</p> 
       </div>
