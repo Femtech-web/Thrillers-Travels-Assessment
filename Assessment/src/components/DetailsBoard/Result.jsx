@@ -34,18 +34,18 @@ const Result = () => {
     <div className='mt-8'>
         {!mobile
             ? <div> 
-            {searchResults.map((result, index) => (
+                {searchResults.map((result, index) => (
                 <ResultBar key={index} {...result} />
                 ))}
 
                 <div className='flex mt-6'>
-                <span className={styles.pagination()}><MdOutlineKeyboardArrowLeft /></span>
-                {Array(pages).fill(null).map((page, index) => (
-                    <span key={index} className={styles.pagination(index, activePage)} 
-                    onClick={() => handlePagination(index + 1)}>{index + 1}
-                    </span>
-                ))}
-                <span className={styles.pagination()}><MdOutlineKeyboardArrowRight /></span>
+                    <span className={styles.pagination()}><MdOutlineKeyboardArrowLeft /></span>
+                    {Array(pages).fill(null).map((page, index) => (
+                        <span key={index} className={styles.pagination(index, activePage)} 
+                        onClick={() => handlePagination(index + 1)}>{index + 1}
+                        </span>
+                    ))}
+                    <span className={styles.pagination()}><MdOutlineKeyboardArrowRight /></span>
                 </div>
             
             </div>
