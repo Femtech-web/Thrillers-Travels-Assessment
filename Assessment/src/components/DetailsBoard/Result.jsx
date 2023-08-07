@@ -27,8 +27,9 @@ const Result = () => {
     slidesToScroll: 1,
     speed: 1000,
     initialSlide: 0,
-    arrows: mobile ? false : true
+    arrows: false
   };
+
   return (
     <div className='mt-8'>
         {!mobile
@@ -50,10 +51,10 @@ const Result = () => {
             </div>
             : <div className='mb-12'>
                 <Slider {...settings}>
-                {searchResults.map((result, index) => (
-                    <ResultBar key={index} {...result} />
-                ))}
-            </Slider>
+                    {searchResults.map((result, index) => (
+                        <ResultBar key={index} {...result} />
+                    ))}
+                </Slider>
             </div>
         }
   </div>
